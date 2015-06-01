@@ -27,13 +27,13 @@ $(document).ready(function() {
 
     var newCountry = { name: inputtedCountry, cities: [], visits: [] };
 
-    $(".new-city").each(function() {
+    $(".add-city").each(function() {
       var inputtedCity = $(this).find("input.new-city").val();
       var newCity = { name: inputtedCity };
       newCountry.cities.push(newCity);
     });
 
-    $(".new-visit").each(function() {
+    $(".add-visit").each(function() {
       var inputtedVisit = $(this).find("input.new-visit").val();
       var newVisit = { time: inputtedVisit };
       newCountry.visits.push(newVisit);
