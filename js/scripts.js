@@ -27,6 +27,7 @@ $(document).ready(function() {
 
     var newCountry = { name: inputtedCountry, cities: [], visits: [] };
 
+// Make sure that classes and ids have different names. When $(".___") and ("input.___") had the same name, it caused the program to loop twice, leaving one entry undefined.
     $(".add-city").each(function() {
       var inputtedCity = $(this).find("input.new-city").val();
       var newCity = { name: inputtedCity };
