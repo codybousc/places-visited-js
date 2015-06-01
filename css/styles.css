@@ -1,12 +1,12 @@
-#show-contact {
+#show-country {
   display: none;
 }
 
-.contact {
+.country {
   cursor: pointer;
   color: #0088cc;
 }
 
-.contact:hover {
+.country:hover {
   text-decoration: underline;
 }
